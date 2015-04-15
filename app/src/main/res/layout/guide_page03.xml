@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#2baf2b">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:keepScreenOn="true"
+        android:gravity="center"
+        android:text="GuidePage03"
+        android:textStyle="bold"
+        android:textSize="50sp"
+        android:textColor="#ffffff"/>
+</RelativeLayout>

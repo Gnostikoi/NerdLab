@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity">
+
+    <android.support.v4.view.ViewPager android:id="@+id/guideUI"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true">
+
+    </android.support.v4.view.ViewPager>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guidelist"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13.0dip"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/page01"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:padding="7.0dp"
+            android:layout_marginBottom="0.0dp"
+            android:src="@drawable/ic_action_record_choosed"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/page02"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:padding="7.0dp"
+            android:layout_marginBottom="0.0dp"
+            android:src="@drawable/ic_action_record"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/page03"
+            android:clickable="true"
+            android:padding="7.0dp"
+            android:layout_marginBottom="0.0dp"
+            android:src="@drawable/ic_action_record"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/page04"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:padding="4.0dp"
+            android:layout_marginBottom="0.0dp"
+            android:src="@drawable/ic_action_record"/>
+    </LinearLayout>
+</RelativeLayout>

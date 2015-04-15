@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">NerdLab</string>
+
+    <string name="action_settings">Nerd</string>
+    <string name="title_activity_first">NerdLab</string>
+
+    <string name="title_section1">主页</string>
+    <string name="title_section2">校园活动</string>
+    <string name="title_section3">社团活动</string>
+    <string name="title_section4">个人活动</string>
+    <string name="title_section5">其他</string>
+
+    <string name="title_activity_fullscreen">NerdLab</string>
+    <string name="dummy_content">Nerd\nLab</string>
+    <string name="title_activity_main_tab">MainTabActivity</string>
+    <string name="title_activity_drawer">DrawerActivity</string>
+
+    <string name="drawer_open">drawer_open</string>
+    <string name="drawer_close">drawer_close</string>
+    <string name="app_description">Android drawer icon with material design animation</string>
+
+
+
+    <string name="fbm_item1">search activity</string>
+    <string name="fbm_item2">post</string>
+    <string name="navItem1">navItem1</string>
+    <string name="navItem2">navItem2</string>
+    <string name="navItem3">navItem3</string>
+    <string name="navItem4">navItem4</string>
+
+    <string name="title_activity_text_tab">text_tab</string>
+</resources>

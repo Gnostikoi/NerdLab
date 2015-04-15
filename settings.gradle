@@ -1,0 +1,4 @@
+include ':app'
+//project('Drawer').projectDir=new File('libs/Drawer')
+include ':libs:Drawer'
+include ':libs:PagerSlidingTabStrip'
