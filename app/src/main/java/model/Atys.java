@@ -9,19 +9,19 @@ public class Atys extends BaseModel {
 
     // model columns
     public final static String COL_ID = "id";
-    public final static String COL_USER_NAME = "user_name";
-    public final static String COL_USER_FACE = "user_face";
+    public final static String COL_USER_NAME = "username";
+    public final static String COL_USER_FACE = "userface";
     public final static String COL_TITLE = "title";
     public final static String COL_CONTENT = "content";
     public final static String COL_COMMENT_ID = "comment_id";
-    public final static String COL_PUBTIME = "publish_time";
+    public final static String COL_PUBTIME = "pubtime";
     public final static String COL_PICTURE = "picture";
     public final static String COL_JOIN_COUNT = "join_count";
     public final static String COL_LIKE_COUNT = "like_count";
 
     private String id;
-    private String user_name;
-    private String user_face;
+    private String username;
+    private String userface;
     private String title;
     private String content;
     private String comment_id;
@@ -30,12 +30,12 @@ public class Atys extends BaseModel {
     private String join_count;
     private String like_count;
 
-    public Atys(String id, String user_name, String user_face, String title, String content,
+    public Atys(String id, String username, String userface, String title, String content,
                 String comment_id, String pubtime, String picture,
                 String join_count, String like_count) {
         setId(id);
-        setUser_name(user_name);
-        setUser_face(user_face);
+        setUser_name(username);
+        setUser_face(userface);
         setTitle(title);
         setContent(content);
         setComment_id(comment_id);
@@ -43,6 +43,10 @@ public class Atys extends BaseModel {
         setPicture(picture);
         setJoin_count(join_count);
         setLike_count(like_count);
+
+    }
+
+    public Atys() {
 
     }
 
@@ -55,18 +59,18 @@ public class Atys extends BaseModel {
     }
 
     public String getUser_name() {
-        return user_name;
+        return username;
     }
 
-    public void setUser_name(String user_name) {
-        this.user_name = user_name;
+    public void setUser_name(String username) {
+        this.username = username;
     }
     public String getUser_face() {
-        return user_face;
+        return userface;
     }
 
-    public void setUser_face(String user_face) {
-        this.user_face = user_face;
+    public void setUser_face(String userface) {
+        this.userface = userface;
     }
 
     public String getTitle() {

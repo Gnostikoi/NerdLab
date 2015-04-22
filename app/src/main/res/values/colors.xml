@@ -18,4 +18,23 @@
     <color name="pink_pressed">#ec407a</color>
     <color name="blue_semi_transparent">#805677fc</color>
     <color name="blue_semi_transparent_pressed">#80738ffe</color>
+    
+    <!--      weibo project    -->
+    <color name="bg">#f1e3e4</color>
+    <color name="red">#FF0000</color>
+    <color name="gray">#FFFFEE</color>
+    <color name="black">#000000</color>
+    <!--<color name="white">#FFFFFF</color>-->
+    
+    <color name="text">#333333</color>
+    <color name="body1">#FFFFFF</color>
+    <color name="body2">#F9F9F9</color>
+    <color name="menu1">#EEEEEE</color>
+    <color name="menu2">#BBBBBB</color>
+    <color name="divider1">#DDDDDD</color>
+    <color name="divider2">#EEEEEE</color>
+    <color name="divider3">#FFFFFF</color>
+    <color name="loading">#99000000</color>
+     <!--      weibo project    done-->
+    
 </resources>

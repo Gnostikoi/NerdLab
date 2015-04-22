@@ -15,14 +15,14 @@ import android.widget.ImageView;
 
 
 import nerdlab.main.DrawerActivity;
+import ui.UiLogin;
+
 import com.example.guideapplication.R;
 
 import java.util.ArrayList;
 
 
 public class GuideActivity extends Activity {
-
-
 
     private ViewPager viewPager;
 
@@ -116,7 +116,7 @@ public class GuideActivity extends Activity {
             @Override
             public void onClick(View v) {
                 Intent intent =new Intent();
-                intent.setClass(GuideActivity.this,DrawerActivity.class);
+                intent.setClass(GuideActivity.this, UiLogin.class);
                 startActivity(intent);
                 finish();
             }
