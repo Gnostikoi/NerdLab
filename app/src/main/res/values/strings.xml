@@ -66,7 +66,39 @@
       <string name="customer_fans">粉丝</string>
       <string name="customer_blog">微博</string>
 
-<!-- TODO: Remove or change this placeholder text -->
+    <!--用户个人信息-->
+    <string name="user_nickname">Your nickname here</string>
+    <string name="user_bio">Say something about you</string>
+    <string name="user_location">Location</string>
+    <string name="user_gender">Gender</string>
+    <string name="user_birthday">Your birthday</string>
+    <string name="user_email">Your email address</string>
+    <string name="head_profile">Profile</string>
+    <string name="user_qqNum">Your QQ numbers</string>
+    <string name="user_info">个人信息</string>
+    <string name="user_contact">联系方式</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="str_nickname">昵称</string>
+    <string name="str_email">电子邮箱</string>
+    <string name="str_qqNum">QQ</string>
+    <string name="str_bio">简介</string>
+    <string name="str_gender">性别</string><string name="str_location">所在地</string><string name="str_birthday">生日</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <!--weibo project done-->
+
+    <!--Event Post Page-->
+    <string name="event_host_name">John Smith</string>
+    <string name="event_posted_time">09:27 AM</string>
+    <string name="event_viewed_times">249</string>
+    <string name="event_title">Sample Title</string>
+    <string name="event_content">bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla</string>
+    <string name="event_location">厦大西村</string>
+    <string name="event_time">10月1日 15:00</string>
+    <string name="event_tag">户外，运动</string>
+    <string name="event_join">加入</string>
+    <string name="event_comment">评论</string>
+    <string name="event_send_button">发送</string>
+
 </resources>

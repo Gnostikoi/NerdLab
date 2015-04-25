@@ -27,7 +27,5 @@ dependencies {
     compile project(':libs:Drawer')
     compile project(':libs:PagerSlidingTabStrip')
     compile 'com.getbase:floatingactionbutton:1.9.0'
-    compile 'de.hdodenhof:circleimageview:1.2.2'
-    compile files('/Users/chizhang/Documents/workspace/NerdLab/libs/httpmime-4.1.3.jar')
     compile files('libs/httpmime-4.1.3.jar')
 }

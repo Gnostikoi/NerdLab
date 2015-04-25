@@ -2,4 +2,20 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <!--用户信息设置界面-->
+    <dimen name="text_size_head">23sp</dimen>
+    <dimen name="profile_icon_size">60dp</dimen>
+    <dimen name="space">16dp</dimen>
+    <dimen name="text_size_normal">10sp</dimen>
+    <dimen name="padding_normal">8dp</dimen>
+    <dimen name="letter_spacing">2dp</dimen>
+    <dimen name="text_size_large">15dp</dimen>
+    <dimen name="table_left">100dp</dimen>
+    <!--Event post page-->
+    <dimen name="margin_normal">10dp</dimen>
+    <dimen name="text_size_name">27dp</dimen>
+    <dimen name="margin_large">5dp</dimen>
+    <dimen name="padding_button">3dp</dimen>
+    <dimen name="padding_large">12dp</dimen>
+    <dimen name="text_size_medium">13dp</dimen>
 </resources>

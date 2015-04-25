@@ -36,5 +36,7 @@
     <color name="divider3">#FFFFFF</color>
     <color name="loading">#99000000</color>
      <!--      weibo project    done-->
+    <!-- User Profile-->
+    <color name="yellow">#fcca59</color>
     
 </resources>

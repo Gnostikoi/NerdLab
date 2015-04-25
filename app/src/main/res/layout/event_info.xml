@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView" >
+
+        <TabHost
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/tabHost">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"></TabWidget>
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <LinearLayout
+                        android:id="@+id/tab1"
+                        android:layout_width="fill_parent"
+                        android:background="@color/background"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical">
+
+                        <GridLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:padding="@dimen/padding_normal"
+                            android:layout_margin="@dimen/margin_normal"
+                            android:layout_gravity="center_horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/profile_icon_size"
+                                android:layout_height="@dimen/profile_icon_size"
+                                android:id="@+id/imageView"
+                                android:src="@drawable/avatar"
+                                android:contentDescription="Host_avatar"
+                                android:layout_row="0"
+                                android:layout_column="0" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_rowWeight="3"
+                                android:text="@string/event_host_name"
+                                android:id="@+id/event_host_name"
+                                android:textSize="@dimen/text_size_name"
+                                android:layout_gravity="top"
+                                android:textStyle="bold"
+                                android:layout_marginLeft="@dimen/margin_normal"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_rowWeight="1"
+                                android:id="@+id/event_viewed_times"
+                                android:layout_gravity="left|bottom"
+                                android:drawableLeft="@drawable/view_icon"
+                                android:layout_marginLeft="@dimen/margin_normal"
+                                android:text="@string/event_viewed_times"
+                                android:layout_row="0" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/event_posted_time"
+                                android:text="@string/event_posted_time"
+                                android:layout_gravity="right|bottom"
+                                android:layout_row="0"
+                                android:layout_column="2" />
+
+
+                        </GridLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="@dimen/margin_normal"
+                            android:layout_marginRight="@dimen/margin_normal"
+                            android:padding="@dimen/padding_normal"
+                            android:background="@color/white"
+                            android:layout_height="match_parent">
+                        <ViewFlipper
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/Event_Image_Flipper"
+                            android:layout_row="2"
+                            android:autoStart="true"
+                            android:layout_column="1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="@string/event_title"
+                            android:id="@+id/Event_post_title"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/event_content"
+                            android:id="@+id/Event_post_content"
+                            android:singleLine="false" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/event_location"
+                            android:drawableLeft="@drawable/location_icon_red"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/event_time"
+                                android:drawableLeft="@drawable/clock_icon"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/event_tag"
+                                android:drawableLeft="@drawable/tag_icon"/>
+                            <Button
+                                android:layout_width="65dp"
+                                android:layout_height="35dp"
+                                android:layout_margin="@dimen/margin_large"
+                                android:text="@string/event_join"
+                                android:background="@color/yellow"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_size_medium"
+                                android:layout_gravity="right"
+                                android:id="@+id/event_join_button" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/margin_normal"
+                            android:padding="@dimen/padding_normal"
+                            android:background="@color/white"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/event_comment"
+                                android:textSize="@dimen/text_size_large"
+                                android:textColor="@color/half_black"
+                                android:layout_marginLeft="@dimen/margin_normal"
+                                android:layout_marginTop="@dimen/margin_large"/>
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/background"
+                                android:shadowRadius="10.0"
+                                android:layout_margin="@dimen/margin_normal"/>
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/event_send_button"
+                                android:background="@color/yellow"
+                                android:textColor="@color/white"/>
+                            <ListView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:divider="@color/half_black"
+                                android:dividerHeight="1dp"
+                                android:id="@+id/listView" />
+                            </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tab2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical"></LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tab3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical"></LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </TabHost>
+    </ScrollView>
+
+</LinearLayout>

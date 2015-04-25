@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/background" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+            android:padding="@dimen/padding_normal"        
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/user_avatar"
+            android:layout_width="@dimen/profile_icon_size"
+            android:layout_height="@dimen/profile_icon_size"
+            android:src="@drawable/avatar"
+            android:padding="@dimen/padding_normal" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_gravity="center_vertical"
+            android:textStyle="bold"
+            android:padding="@dimen/padding_normal"
+            android:text="@string/user_nickname"
+            android:textSize="@dimen/text_size_large" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space"/>
+
+    <TableLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        
+        <TableRow 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/divider"
+            android:padding="@dimen/padding_normal">
+            <TextView
+                android:text="@string/str_location"
+                android:layout_width="0dp"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:textAllCaps="true"
+                android:padding="@dimen/padding_normal"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_normal"
+                android:textColor="@color/half_black"/>
+            <EditText
+                android:text="@string/user_location"
+                android:textSize="@dimen/text_size_normal"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_gravity="left"
+                android:padding="@dimen/padding_normal"
+                android:layout_height="match_parent"/>
+        </TableRow>
+        <TableRow 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/divider"
+            android:padding="@dimen/padding_normal">
+            <TextView
+                android:text="@string/str_gender"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="right"
+                android:textAllCaps="true"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_normal"
+                android:textSize="@dimen/text_size_normal"
+                android:textColor="@color/half_black"/>
+            <RadioGroup
+                android:orientation="horizontal"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:layout_width="0dp">
+                <RadioButton 
+                    android:text="男"
+                    android:layout_width="81dp"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/text_size_normal"/>
+                <RadioButton  android:text="女"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/text_size_normal"/>
+            </RadioGroup>
+            </TableRow>
+                    <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/divider"
+            android:padding="@dimen/padding_normal">
+            <TextView
+                android:text="@string/str_bio"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:textAllCaps="true"
+                android:layout_gravity="right"
+                android:padding="@dimen/padding_normal"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_normal"
+                android:textColor="@color/half_black"/>
+             <EditText
+                android:text="@string/user_bio"
+                android:layout_weight="2"
+                 android:layout_width="0dp"
+                android:padding="@dimen/padding_normal"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/text_size_normal"
+                 android:id="@+id/user_bio"
+                 android:inputType="textMultiLine" />
+            </TableRow>
+                    <TableRow 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/divider"
+            android:padding="@dimen/padding_normal">
+            <TextView
+                android:text="@string/str_birthday"
+                android:layout_weight="1"
+                android:textAllCaps="true"
+                android:layout_gravity="right"
+                android:layout_width="0dp"
+                android:padding="@dimen/padding_normal"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_normal"
+                android:textColor="@color/half_black"/>
+             <EditText
+                android:text="@string/user_birthday"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:padding="@dimen/padding_normal"
+                android:textSize="@dimen/text_size_normal"
+                android:layout_height="match_parent"
+                 android:inputType="datetime" />
+            </TableRow>
+    </TableLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space"/>
+
+    <TableLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+
+                    <TableRow 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/divider"
+            android:padding="@dimen/padding_normal">
+            <TextView
+                android:text="@string/str_email"
+                android:layout_weight="1"
+                android:textAllCaps="true"
+                android:layout_gravity="right"
+                android:layout_width="0dp"
+                android:padding="@dimen/padding_normal"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_normal"
+                android:textColor="@color/half_black"/>
+             <EditText
+                android:text="@string/user_email"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:padding="@dimen/padding_normal"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/text_size_normal"
+                 android:inputType="textEmailAddress" />
+            </TableRow>
+                    <TableRow 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/divider"
+            android:padding="@dimen/padding_normal">
+            <TextView
+                android:text="@string/str_qqNum"
+                android:layout_weight="1"
+                android:textAllCaps="true"
+                android:layout_gravity="right"
+                android:layout_width="0dp"
+                android:padding="@dimen/padding_normal"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_normal"
+                android:textColor="@color/half_black"/>
+             <EditText
+                android:text="@string/user_qqNum"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:padding="@dimen/padding_normal"
+                android:textSize="@dimen/text_size_normal"
+                android:layout_height="match_parent"
+                 android:inputType="number" />
+            </TableRow>
+    </TableLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:background="@color/yellow"
+        android:id="@+id/save_button"
+        android:textColor="@color/white"
+        android:text="Save"/>
+
+</LinearLayout>
