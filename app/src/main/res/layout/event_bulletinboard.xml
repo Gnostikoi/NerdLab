@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/background"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_margin="@dimen/margin_normal"
+        android:padding="@dimen/padding_normal"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_normal"
+        android:text="@string/event_post"
+        android:textColor="@color/half_black"
+        android:textSize="@dimen/text_size_large"
+        android:textStyle="bold"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:editable="true"
+            android:minLines="3"
+            android:autoText="@string/event_post_hint"
+            android:shadowRadius="10.0"
+            android:layout_margin="@dimen/margin_normal"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/emoticon_icon"
+            android:layout_gravity="left"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mention_icon"
+            android:layout_gravity="left"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/picture_icon"
+            android:layout_gravity="left"/>
+
+        </LinearLayout>
+        <Button
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_margin="@dimen/button_margin"
+            android:text="@string/event_send_button"
+            android:background="@color/yellow"
+            android:textSize="@dimen/text_size_medium"
+            android:textColor="@color/white"
+            android:layout_gravity="right|bottom"/>
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_normal"
+        android:padding="@dimen/padding_normal"
+        android:background="@color/white"></ListView>
+</LinearLayout>

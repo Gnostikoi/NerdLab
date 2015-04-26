@@ -100,5 +100,13 @@
     <string name="event_join">加入</string>
     <string name="event_comment">评论</string>
     <string name="event_send_button">发送</string>
+    <string name="event_post_hint">说点什么..</string>
+    <string name="event_post">发布新帖</string>
 
+    <!--Post Compose-->
+    <string name="post_title">活动标题</string>
+    <string name="post_title_hint">此处填写活动标题</string>
+    <string name="post_location">活动地点</string>
+    <string name="post_time">活动时间</string>
+    <string name="post_content">详情</string>
 </resources>

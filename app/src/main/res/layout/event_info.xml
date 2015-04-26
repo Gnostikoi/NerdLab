@@ -8,30 +8,10 @@
         android:layout_height="match_parent"
         android:id="@+id/scrollView" >
 
-        <TabHost
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:id="@+id/tabHost">
-
-            <LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:orientation="vertical">
-
-                <TabWidget
-                    android:id="@android:id/tabs"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"></TabWidget>
-
-                <FrameLayout
-                    android:id="@android:id/tabcontent"
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent">
 
                     <LinearLayout
-                        android:id="@+id/tab1"
+                        android:id="@+id/event_info_page"
                         android:layout_width="fill_parent"
-                        android:background="@color/background"
                         android:layout_height="fill_parent"
                         android:orientation="vertical">
 
@@ -114,6 +94,7 @@
                             android:layout_height="wrap_content"
                             android:text="@string/event_content"
                             android:id="@+id/Event_post_content"
+                            android:padding="@dimen/padding_normal"
                             android:singleLine="false" />
                         <TextView
                             android:layout_width="match_parent"
@@ -131,15 +112,15 @@
                                 android:text="@string/event_tag"
                                 android:drawableLeft="@drawable/tag_icon"/>
                             <Button
-                                android:layout_width="65dp"
-                                android:layout_height="35dp"
-                                android:layout_margin="@dimen/margin_large"
                                 android:text="@string/event_join"
                                 android:background="@color/yellow"
                                 android:textColor="@color/white"
                                 android:textSize="@dimen/text_size_medium"
                                 android:layout_gravity="right"
-                                android:id="@+id/event_join_button" />
+                                android:layout_margin="@dimen/button_margin"
+                                android:id="@+id/event_join_button"
+                                android:layout_width="@dimen/button_width"
+                                android:layout_height="@dimen/button_height" />
                         </LinearLayout>
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -163,9 +144,12 @@
                                 android:shadowRadius="10.0"
                                 android:layout_margin="@dimen/margin_normal"/>
                             <Button
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_width="@dimen/button_width"
+                                android:layout_height="@dimen/button_height"
                                 android:text="@string/event_send_button"
+                                android:layout_margin="@dimen/button_margin"
+                                android:textSize="@dimen/text_size_medium"
+                                android:layout_gravity="bottom|right"
                                 android:background="@color/yellow"
                                 android:textColor="@color/white"/>
                             <ListView
@@ -173,25 +157,11 @@
                                 android:layout_height="wrap_content"
                                 android:divider="@color/half_black"
                                 android:dividerHeight="1dp"
+                                android:footerDividersEnabled="true"
                                 android:id="@+id/listView" />
                             </LinearLayout>
 
                     </LinearLayout>
 
-                    <LinearLayout
-                        android:id="@+id/tab2"
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:orientation="vertical"></LinearLayout>
-
-                    <LinearLayout
-                        android:id="@+id/tab3"
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:orientation="vertical"></LinearLayout>
-                </FrameLayout>
-            </LinearLayout>
-        </TabHost>
-    </ScrollView>
-
+</ScrollView>
 </LinearLayout>

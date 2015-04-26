@@ -36,7 +36,7 @@
     </style>
 
     <style name="ActionBar" parent="android:Widget.ActionBar">
-        <item name="android:background">@color/actionbar_color</item>
+        <item name="android:background">@color/yellow</item>
         <item name="android:icon">@android:color/transparent</item>
         <item name="android:titleTextStyle">@style/ActionBar.TitleText</item>
         <item name="android:textColor">#000000</item>
@@ -45,7 +45,8 @@
     </style>
 
     <style name="ActionBarTabs" parent="android:Widget.ActionBar.TabView">
-        <item name="android:background">#f57c00</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:theme">@android:style/Theme.Material.NoActionBar</item>
     </style>
     <style name="ActionBar.TitleText" parent="android:TextAppearance.Holo.Widget.ActionBar.Title">
         <item name="android:textColor">@android:color/white</item>
@@ -78,6 +79,12 @@
     <!--weibo project over-->
 
     <!--User Profile-->
-
+    <!--Event Post Page-->
+    <style name="button_style" parent="android:Widget.Button">
+        <item name="android:background">@color/yellow</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:layout_width">65dp</item>
+        <item name="android:height">35dp</item>
+    </style>
 
 </resources>
