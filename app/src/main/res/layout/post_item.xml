@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="@dimen/padding_normal"
+    android:layout_margin="@dimen/margin_normal"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="@dimen/padding_normal"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="@dimen/profile_comment_size"
+            android:layout_height="@dimen/profile_comment_size"
+            android:src="@drawable/avatar"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_normal"
+            android:textSize="@dimen/text_size_large"
+            android:text="@string/comment_title"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/comment_time"
+            android:textColor="@color/half_black"
+            android:layout_gravity="bottom|right"
+            android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    <TextView
+        android:padding="@dimen/padding_normal"
+        android:layout_width="match_parent"
+        android:text="@string/comment_content"
+        android:minLines="4"
+        android:textSize="@dimen/abc_text_size_small_material"
+        android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_margin="@dimen/button_margin"
+            android:text="@string/comment_reply_button"
+            android:textColor="@color/yellow"
+            android:textSize="@dimen/abc_text_size_small_material"
+            android:background="@color/white"
+            android:layout_gravity="bottom|right"/>
+</LinearLayout>

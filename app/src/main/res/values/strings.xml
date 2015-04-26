@@ -109,4 +109,9 @@
     <string name="post_location">活动地点</string>
     <string name="post_time">活动时间</string>
     <string name="post_content">详情</string>
+    <string name="post_post">发布</string>
+    <string name="comment_title">评论标题</string>
+    <string name="comment_content">评论内容</string>
+    <string name="comment_time">2015-1-4 9:44 AM</string>
+    <string name="comment_reply_button">回复</string>
 </resources>
